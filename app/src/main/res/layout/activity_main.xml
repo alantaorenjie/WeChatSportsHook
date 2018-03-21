@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context="trj.com.xponsedsample.MainActivity">
 
-    <EditText
+    <TextView
         android:id="@+id/et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="请输入你需要的微信步数"
-        android:inputType="number"
+        android:text="在Xposed中启用模块，并重启手机即可生效"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
