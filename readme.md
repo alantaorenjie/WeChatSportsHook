@@ -1,0 +1,4 @@
+# 修改微信运动步数
+- 基于xposed框架修改微信运动步数
+
+- 原理：当点击微信运动排行榜的时候微信APP会获取手机上计数传感器的数值，然后传感器会返回我们行走的步数。此时我们使用Xposed框架来hook计数传感器的队列函数dispatchSensorEvent()，该函数在android.hardware.SystemSensorManager$SensorEventQueue这个类中。当询问传感器的时候我们在数值上加上相应步数返回给微信运动达到欺骗效果。
